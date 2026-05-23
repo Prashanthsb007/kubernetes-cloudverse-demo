@@ -124,6 +124,13 @@ kubectl get pvc -n cloudverse
 # Check CSI Driver Pods
 kubectl get pods -n kube-system
 
+#
+BOTH get installed
+# | Component            | Installed? | Purpose                            |
+# | -------------------- | ---------- | ---------------------------------- |
+# | `ebs-csi-controller` | ✅ Yes      | Cluster-level storage management   |
+# | `ebs-csi-node`       | ✅ Yes      | Node-level volume mount operations |
+
 # Check Addon Status
 aws eks describe-addon \
   --cluster-name my-eks-cluster \
