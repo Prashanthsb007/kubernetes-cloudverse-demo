@@ -11,7 +11,7 @@ When you delete an EKS cluster:
 
 ```
 eksctl delete cluster --name my-eks-cluster --region us-east-1
-````
+```
 
 AWS usually deletes:
 
