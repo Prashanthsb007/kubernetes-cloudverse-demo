@@ -56,7 +56,7 @@ cloudverse/
 | Requirement | Details |
 |------------|----------|
 | AWS Account | With running EKS cluster |
-| EC2 Instance | Amazon Linux 2 |
+| EC2 Instance | Amazon Linux 2(3 WORKER Nodes) |
 | Docker | Installed |
 | AWS CLI | Configured |
 | kubectl | Connected to EKS |
