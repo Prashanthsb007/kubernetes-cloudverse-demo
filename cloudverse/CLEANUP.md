@@ -219,6 +219,23 @@ aws elbv2 describe-load-balancers \
 
 ---
 
+```bash
+
+export AWS_REGION=us-east-1
+
+aws ecr delete-repository --repository-name cloudverse/ui-service           --region $AWS_REGION --force
+aws ecr delete-repository --repository-name cloudverse/api-gateway          --region $AWS_REGION --force
+aws ecr delete-repository --repository-name cloudverse/auth-service         --region $AWS_REGION --force
+aws ecr delete-repository --repository-name cloudverse/user-service         --region $AWS_REGION --force
+aws ecr delete-repository --repository-name cloudverse/product-service      --region $AWS_REGION --force
+aws ecr delete-repository --repository-name cloudverse/order-service        --region $AWS_REGION --force
+aws ecr delete-repository --repository-name cloudverse/cart-service         --region $AWS_REGION --force
+aws ecr delete-repository --repository-name cloudverse/notification-service --region $AWS_REGION --force
+aws ecr delete-repository --repository-name cloudverse/analytics-service    --region $AWS_REGION --force
+aws ecr delete-repository --repository-name cloudverse/search-service       --region $AWS_REGION --force
+
+```
+
 # Verify Running EC2 Instances
 
 ```bash
